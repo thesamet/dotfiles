@@ -26,11 +26,12 @@ prepare_symlink .screenrc
 prepare_symlink .tmux.conf
 prepare_symlink .vim
 prepare_symlink .vimrc
+prepare_symlink .zshrc
 
 mkdir -p $HOME/bin
 
-if [[ $OSTYPE =~ "darwin" ]]; then
-fi
+# if [[ $OSTYPE =~ "darwin" ]]; then
+# fi
 
 if [[ $OSTYPE =~ "linux" ]]; then
   prepare_symlink .Xkbmap

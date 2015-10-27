@@ -1,0 +1,15 @@
+# termcapinfo xterm ti@:te@
+vbell off
+escape ^Oo
+defscrollback 5000
+
+hardstatus alwayslastline "%w %="
+
+bind o command -c new
+
+sorendition "+b kG"
+defutf8 on
+
+# caption always "%?%F%{-b bc}%:%{-b bb}%?%C|%D|%M %d|%H%?%F%{+u wb}%? %L=%-Lw%45>%{+b by}%n%f* %t%{-}%+Lw%-0<" 
+
+# caption always "%{= kw}%-w%{= BW}%n %t%{-}%+w"

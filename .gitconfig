@@ -1,0 +1,36 @@
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+[gui]
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
+[user]
+	name = Nadav Samet,,,
+	email = thesamet@gmail.com
+[alias]
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    d = difftool
+# logs
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%ae]" --decorate
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%ae]" --decorate --numstat
+    lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%ae]" --decorate --date=short
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+# file log
+    fl = log -u
+# find file path in code base
+    f = "!git ls-files | grep -i"
+# grep in code base 
+    grep = grep -Ii
+[core]
+	excludesfile = /Volumes/User/thesamet/.cvsignore
+[push]
+	default = current
+[gui]
+[http]
+	cookiefile = /home/thesamet/.gitcookies

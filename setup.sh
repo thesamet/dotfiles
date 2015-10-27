@@ -18,6 +18,7 @@ function prepare_symlink() {
 }
 
 prepare_symlink .ackrc
+prepare_symlink .atom
 prepare_symlink .bash_profile
 prepare_symlink .bashrc
 prepare_symlink .gitconfig

@@ -28,8 +28,7 @@ prepare_symlink .tmux.conf
 prepare_symlink .vim
 prepare_symlink .vimrc
 prepare_symlink .zshrc
-
-mkdir -p $HOME/bin
+prepare_symlink bin
 
 # if [[ $OSTYPE =~ "darwin" ]]; then
 # fi

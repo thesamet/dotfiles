@@ -50,11 +50,12 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(
   git 
-  colored-man
-  archlinux 
   bower 
+  colored-man
   history-substring-search 
+  java
   jira
+  scala
   aws)
 
 source $ZSH/oh-my-zsh.sh

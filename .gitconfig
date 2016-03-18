@@ -34,3 +34,6 @@
 [gui]
 [http]
 	cookiefile = /home/thesamet/.gitcookies
+[credential]
+	helper = !aws --profile CodeCommitProfile codecommit credential-helper $@
+	UseHttpPath = true

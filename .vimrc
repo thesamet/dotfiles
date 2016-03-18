@@ -1,34 +1,35 @@
 autocmd!
 
 syntax on
-
+set nocompatible
 filetype off
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Bundle 'VundleVim/Vundle.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'bufexplorer.zip'
-Bundle 'bufkill.vim'
-Bundle 'derekwyatt/vim-scala.git'
-Bundle 'mako.vim'
-Bundle 'surround.vim'
-Bundle 'google.vim'
-" Bundle 'DirDiff.vim'
-Bundle 'derekwyatt/vim-fswitch.git'
-Bundle 'groenewege/vim-less.git'
-Bundle 'tpope/vim-abolish.git'
-Bundle 'tpope/vim-fugitive.git'
-Bundle 'tpope/vim-commentary.git'
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'bufexplorer.zip'
+Plugin 'bufkill.vim'
+Plugin 'derekwyatt/vim-scala.git'
+Plugin 'mako.vim'
+Plugin 'surround.vim'
+Plugin 'google.vim'
+" Plugin 'DirDiff.vim'
+Plugin 'derekwyatt/vim-fswitch.git'
+Plugin 'groenewege/vim-less.git'
+Plugin 'tpope/vim-abolish.git'
+Plugin 'tpope/vim-fugitive.git'
+Plugin 'tpope/vim-commentary.git'
 
-Bundle "git://github.com/MarcWeber/vim-addon-mw-utils.git"
-Bundle "git://github.com/tomtom/tlib_vim.git"
-Bundle "git://github.com/garbas/vim-snipmate.git"
-Bundle "git://github.com/tomtom/tskeleton_vim"
-Bundle 'git://github.com/Rip-Rip/clang_complete.git'
-Bundle 'reinh/vim-makegreen.git'
+Plugin 'git://github.com/MarcWeber/vim-addon-mw-utils.git'
+Plugin 'git://github.com/tomtom/tlib_vim.git'
+Plugin 'git://github.com/garbas/vim-snipmate.git'
+Plugin 'git://github.com/tomtom/tskeleton_vim'
+Plugin 'git://github.com/Rip-Rip/clang_complete.git'
+Plugin 'reinh/vim-makegreen.git'
+call vundle#end()
 
-
-filetype plugin on
+" filetype plugin on
 filetype plugin indent on
 
 set autoindent
@@ -45,7 +46,6 @@ set ignorecase smartcase
 set incsearch
 set laststatus=2
 set mouse=a
-set nocompatible
 set ruler
 set shiftwidth=4
 set showmatch

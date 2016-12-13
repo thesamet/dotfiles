@@ -110,3 +110,4 @@ export ANSIBLE_NOCOWS=1
 
 # added by travis gem
 [ -f /home/thesamet/.travis/travis.sh ] && source /home/thesamet/.travis/travis.sh
+export PATH="/usr/local/sbin:$PATH"

@@ -7,10 +7,18 @@
       "atom-dark-ui"
       "atom-dark-syntax"
     ignoredNames: [
+      ".cache"
       ".git"
+      ".pants.d"
       "target"
+      "node_modules"
+      "bower_components"
     ]
     openEmptyEditorOnStart: false
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
   editor:
     invisibles: {}
   "exception-reporting":

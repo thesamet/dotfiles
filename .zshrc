@@ -49,6 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(
+  fasd
   git 
   bower 
   colored-man
@@ -56,6 +57,7 @@ plugins=(
   java
   jira
   scala
+  web-search
   aws)
 
 source $ZSH/oh-my-zsh.sh
@@ -107,7 +109,7 @@ function grev() {
 
 # Seriously?
 export ANSIBLE_NOCOWS=1
+export BROWSER=/usr/bin/google-chrome-stable
 
 # added by travis gem
 [ -f /home/thesamet/.travis/travis.sh ] && source /home/thesamet/.travis/travis.sh
-export PATH="/usr/local/sbin:$PATH"

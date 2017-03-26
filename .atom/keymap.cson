@@ -102,6 +102,9 @@
   'cmd-<': 'editor:scroll-to-cursor'
   'alt-cmd-ctrl-f': 'editor:fold-selection'
 
+  # testing
+  'cmd-t': 'atom-python-test:run-all-tests'
+
   # Sublime Parity
   'cmd-enter': 'editor:newline-below'
   'cmd-shift-enter': 'editor:newline-above'

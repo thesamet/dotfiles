@@ -3,9 +3,6 @@
     disabledPackages: [
       "vim-mode"
     ]
-    themes: [
-      "atom-dark-ui"
-      "atom-dark-syntax"
     ignoredNames: [
       ".cache"
       ".git"
@@ -15,12 +12,14 @@
       "bower_components"
     ]
     openEmptyEditorOnStart: false
+    telemetryConsent: "no"
     themes: [
       "atom-dark-ui"
       "atom-dark-syntax"
     ]
   editor:
     invisibles: {}
+    preferredLineLength: 100
   "exception-reporting":
     userId: "8e2431d8-a1eb-e2b0-b42b-6ad7e3f381ce"
   "vim-mode": {}

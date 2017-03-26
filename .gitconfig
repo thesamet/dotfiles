@@ -9,7 +9,7 @@
 [difftool]
   prompt = false
 [user]
-	name = Nadav Samet,,,
+	name = Nadav Samet
 	email = thesamet@gmail.com
 [alias]
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short

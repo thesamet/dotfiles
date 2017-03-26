@@ -58,7 +58,9 @@ plugins=(
   jira
   scala
   web-search
-  aws)
+  aws
+  virtualenvwrapper
+  )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -109,7 +111,20 @@ function grev() {
 
 # Seriously?
 export ANSIBLE_NOCOWS=1
+
+if [[ $OSTYPE =~ "linux" ]]; then
 export BROWSER=/usr/bin/google-chrome-stable
+fi
+
+if [[ $OSTYPE =~ "darwin" ]]; then
+export BROWSER=/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
+fi
 
 # added by travis gem
 [ -f /home/thesamet/.travis/travis.sh ] && source /home/thesamet/.travis/travis.sh
+
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
+source ~/.iterm2_shell_integration.zsh
+

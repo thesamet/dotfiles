@@ -124,7 +124,8 @@ fi
 [ -f /home/thesamet/.travis/travis.sh ] && source /home/thesamet/.travis/travis.sh
 
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
 
-source ~/.iterm2_shell_integration.zsh
+[ -f /usr/local/opt/nvm.sh ] && source "/usr/local/opt/nvm/nvm.sh"
+
+[ -f ~/.iterm2_shell_integration.zsh ] && source "~/.iterm2_shell_integration.zsh"
 

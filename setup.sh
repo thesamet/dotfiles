@@ -39,6 +39,7 @@ if [[ $OSTYPE =~ "linux" ]]; then
   prepare_symlink .i3
   prepare_symlink .i3status.conf
   prepare_symlink .Xmodmap
+  prepare_symlink VisualStudioCode_User .config/Code/User
 fi
 
 echo -e '\033[1;33mYou are all set.\033[1;31m :)\033[0m'

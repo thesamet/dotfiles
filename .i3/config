@@ -177,7 +177,7 @@ new_window pixel 5
 focus_follows_mouse no
 
 # exec gnome-settings-daemon
-exec xautolock -time 1 -locker '~/bin/lock.sh' &
+exec xautolock -time 2 -locker '~/bin/lock.sh' &
 # exec xcompmgr
 exec --no-startup-id nm-applet
 exec --no-startup-id xset dpms 1200

@@ -69,7 +69,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export SCALA_HOME=/usr/local/share/scala
-export PATH=$PATH:$SCALA_HOME/bin:$HOME/Development/packer
+export PATH=$PATH:$SCALA_HOME/bin:$HOME/Development/packer:/home/thesamet/.local/bin/
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

@@ -35,7 +35,7 @@ filetype plugin indent on
 
 set autoindent
 set cmdheight=2
-set colorcolumn=80
+set colorcolumn=100
 set directory=~/tmp,.
 set encoding=utf-8
 set expandtab

@@ -24,7 +24,7 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec gnome-terminal
 bindsym $mod+Shift+b exec google-chrome-stable
 bindsym $mod+Shift+z exec ~/bin/lock.sh
 bindsym $mod+Home exec nemo --no-desktop
@@ -148,7 +148,6 @@ mode "resize" {
         bindsym j resize grow height 10 px or 10 ppt
         bindsym k resize shrink height 10 px or 10 ppt
         bindsym l resize grow width 10 px or 10 ppt
-
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
@@ -182,3 +181,8 @@ exec xautolock -time 2 -locker '~/bin/lock.sh' &
 exec --no-startup-id nm-applet
 exec --no-startup-id xset dpms 1200
 
+# gaps
+smart_gaps on
+gaps inner 4
+gaps outer 2
+smart_borders on

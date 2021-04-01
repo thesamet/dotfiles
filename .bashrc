@@ -88,3 +88,5 @@ alias travis="docker run -ti -v:/root:/home/thesamet/.travis travis"
 
 # added by travis gem
 [ -f /home/thesamet/.travis/travis.sh ] && source /home/thesamet/.travis/travis.sh
+
+[ -s "/home/thesamet/.jabba/jabba.sh" ] && source "/home/thesamet/.jabba/jabba.sh"

@@ -51,17 +51,16 @@ export WORKON_HOME="$HOME/.virtualenvs"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(
-  fasd
+  wd
   git 
-  bower 
-  colored-man
-  history-substring-search 
-  java
-  jira
-  scala
-  web-search
-  aws
-  virtualenvwrapper
+  # colored-man-pages
+  # history-substring-search 
+  # fasd
+  # bower 
+  # jira
+  # scala
+  # web-search
+  # aws
   )
 
 source $ZSH/oh-my-zsh.sh
@@ -69,7 +68,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export SCALA_HOME=/usr/local/share/scala
-export PATH=$PATH:$SCALA_HOME/bin:$HOME/Development/packer:/home/thesamet/.local/bin/
+export PATH=$PATH:$SCALA_HOME/bin:$HOME/bin:$HOME/Development/packer:/home/thesamet/.local/bin/
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -132,3 +131,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -f ~/.iterm2_shell_integration.zsh ] && source "~/.iterm2_shell_integration.zsh"
 
 [ -f ~/.zshrc_local.sh ] && source ~/.zshrc_local.sh
+
+[ -s "/home/thesamet/.jabba/jabba.sh" ] && source "/home/thesamet/.jabba/jabba.sh"
+if [ -e /home/thesamet/.nix-profile/etc/profile.d/nix.sh ]; then . /home/thesamet/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+eval "$(direnv hook zsh)"

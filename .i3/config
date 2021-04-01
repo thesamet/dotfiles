@@ -11,6 +11,10 @@
 
 set $mod Mod4
 
+smart_gaps on
+gaps inner 10
+gaps outer 0
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -23,10 +27,11 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+for_window [ workspace="9" ] floating enable
+
 # start a terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec /home/thesamet/dev/alacritty/target/release/alacritty
 bindsym $mod+Shift+b exec google-chrome-stable
-bindsym $mod+Shift+z exec ~/bin/lock.sh
 bindsym $mod+Home exec nemo --no-desktop
 
 # kill focused window
@@ -82,8 +87,6 @@ bindsym $mod+Shift+Up focus parent
 
 # focus the child container
 bindsym $mod+Shift+Down focus child
-
-exec 'i3-msg rename workspace 4 to foo'
 
 set $ws1 1: www
 set $ws2 2: intellij
@@ -168,21 +171,17 @@ bindsym $mod+less mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+        # status_command i3status
+        swaybar_command waybar
 }
 
-new_window pixel 5
+input type:keyboard {
+    xkb_layout us,il
+    xkb_options grp:shifts_toggle
+}
+
+default_border pixel 5
 
 focus_follows_mouse no
 
-# exec gnome-settings-daemon
-exec xautolock -time 2 -locker '~/bin/lock.sh' &
-# exec xcompmgr
-exec --no-startup-id nm-applet
-exec --no-startup-id xset dpms 1200
-
-# gaps
-smart_gaps on
-gaps inner 4
-gaps outer 2
-smart_borders on
+output DVI-0 bg /home/thesamet/Pictures/bg.jpg fill

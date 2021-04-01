@@ -5,4 +5,9 @@
     "files.trimTrailingWhitespace": true,
     "python.unitTest.pyTestEnabled": true,
     "workbench.colorTheme": "Visual Studio Dark"
+    "files.watcherExclude": {
+      "**/.bloop": true,
+      "**/.metals": true,
+      "**/.ammonite": true
+    }
 }

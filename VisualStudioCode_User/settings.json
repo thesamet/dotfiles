@@ -4,10 +4,34 @@
     ],
     "files.trimTrailingWhitespace": true,
     "python.unitTest.pyTestEnabled": true,
-    "workbench.colorTheme": "Visual Studio Dark"
+    "workbench.colorTheme": "Dark Modern",
     "files.watcherExclude": {
       "**/.bloop": true,
       "**/.metals": true,
       "**/.ammonite": true
-    }
+    },
+    "rust-analyzer.check.command": "clippy",
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<C-i>"],
+            "commands": ["interactiveEditor.start"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<C-i>"],
+            "commands": ["interactiveEditor.start"]
+        }
+    ],
+    "tailwindCSS.experimental.classRegex": ["class\\s*:\\s*\"([^\"]*)"],
+        "tailwindCSS.includeLanguages": {
+        "rust": "html"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    },
+    "[javascript]": {
+            "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "github.copilot.chat.edits.enabled": true,
 }

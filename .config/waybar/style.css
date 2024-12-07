@@ -1,0 +1,192 @@
+* {
+  /* `otf-font-awesome` is required to be installed for icons */
+  font-family: 'Fira Code';
+  font-size: 13px;
+}
+
+window#waybar {
+  background-color: rgba(0,0,0,0.6);
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+window#waybar.hidden {
+}
+
+/*
+* Modules
+*/
+
+.modules-left,
+.modules-center,
+.modules-right {
+  padding-left: 10px;
+  padding-right: 10px;
+  background: transparent;
+}
+
+.modules-center {
+  padding-top: 0px;
+}
+
+/*
+* window 
+*/
+
+window#waybar.empty .modules-left {
+  background-color: transparent;
+}
+
+window#waybar.fullscreen .modules-left {
+  background-color: #402120;
+}
+
+/*
+ * workspaces
+ */
+
+#workspaces {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 5px;
+  background-color: rgba(0,0,0,0.8);
+}
+
+#workspaces button {
+  color: #ffffff;
+
+  border-radius: 0px;
+  margin-top: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 0px;
+  padding: 0px 3px;
+}
+
+#workspaces button:hover {
+  color: #fbf1c7;
+  background: #909090;
+}
+
+#workspaces button.active {
+  color: #1d2021;
+  background: #ebdbb2;
+  border-radius: 0px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+#workspaces button:not(.empty):not(.active) {
+  background-color: #504945;
+}
+
+#workspaces button.focused {
+  background-color: #64727d;
+}
+
+#workspaces button.urgent {
+  background-color: #ea6962;
+}
+
+/*
+*
+* modules right
+*
+*/
+.modules-right {
+  background-color: transparent;
+}
+
+#clock,
+#pulseaudio,
+#cpu,
+#memory,
+#language,
+#tray,
+#custom-power,
+#custom-notifications {
+  border-radius: 0px;
+  padding-left: 10px;
+  padding-right: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #32302f;
+  transition: all 0.2s;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+#clock {
+  background-color: #202020;
+  color: white;
+}
+
+#clock:hover {
+  background-color: #404040;
+}
+
+#pulseaudio {
+  background-color: #d8a657;
+}
+
+#pulseaudio:hover {
+  background-color: #ac7928;
+  color: #ddc7a1;
+}
+
+#cpu {
+  background-color: #a9b655;
+}
+
+#cpu:hover {
+  background-color: #798338;
+  color: #ddc7a1;
+}
+
+#memory {
+  background-color: #89b482;
+}
+
+#memory:hover {
+  background-color: #598851;
+}
+
+#language {
+  background-color: #ddddff;
+}
+
+#language:hover {
+  background-color: #eeeeff;
+}
+
+#tray {
+  background-color: #7c6f64;
+}
+
+#tray:hover {
+  background-color: #574e46;
+}
+
+#custom-power {
+  background-color: #ea6962;
+  padding-right: 7px;
+}
+
+#custom-power:hover {
+  background-color: #cd251b;
+  color: #ddc7a1;
+}
+
+#custom-notifications {
+  background-color: #d4be98;
+  /* padding-right: 13px; */
+}
+
+#custom-notifications:hover {
+  background-color: #b49e78;
+  /* padding-right: 13px; */
+}

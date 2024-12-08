@@ -1,6 +1,7 @@
 {
   "catppuccin": { "branch": "main", "commit": "faf15ab0201b564b6368ffa47b56feefc92ce3f4" },
-  "lazy.nvim": { "branch": "main", "commit": "3388a26417c48b15d5266d954f62a4d47fe99490" },
+  "copilot": { "branch": "release", "commit": "87038123804796ca7af20d1b71c3428d858a9124" },
+  "lazy.nvim": { "branch": "main", "commit": "014d1d6d78df4e58f962158e6e00261d8632612c" },
   "plenary.nvim": { "branch": "master", "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d" },
-  "yazi.nvim": { "branch": "main", "commit": "d09f94e79fc0a28f7242ff94af17ca96d8a41878" }
+  "yazi.nvim": { "branch": "main", "commit": "14ba86dbfa97361428ef2413f0cb207e968cc58e" }
 }

@@ -5,6 +5,7 @@ return {
 		vim.cmd([[colorscheme catppuccin-mocha]])
 	end,
 	},
+	{ "github/copilot.vim", name = "copilot" },
 	{
 		"mikavilpas/yazi.nvim",
 		event = "VeryLazy",

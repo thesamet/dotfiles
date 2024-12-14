@@ -6,9 +6,9 @@
     "python.unitTest.pyTestEnabled": true,
     "workbench.colorTheme": "Dark Modern",
     "files.watcherExclude": {
-      "**/.bloop": true,
-      "**/.metals": true,
-      "**/.ammonite": true
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
     },
     "rust-analyzer.check.command": "clippy",
     "vim.visualModeKeyBindingsNonRecursive": [
@@ -34,4 +34,5 @@
             "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "github.copilot.chat.edits.enabled": true,
+    "window.customTitleBarVisibility": "auto",
 }

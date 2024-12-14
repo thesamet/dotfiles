@@ -38,5 +38,6 @@ return {
 				show_help = '<f1>',
 			},
 		},
-	}
+	},
+	{'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'}
 }

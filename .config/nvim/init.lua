@@ -1,12 +1,15 @@
 require("config.lazy")
 
-vim.colorcolumn=100
-vim.ruler=true
-vim.shiftwidth=4
-vim.smartindent=true
-vim.tabstop=4
-vim.cursorline=true
-vim.expandtab=true
+vim.opt.termguicolors = true
+require("bufferline").setup{}
+
+vim.opt.colorcolumn="100"
+vim.opt.ruler=true
+vim.opt.shiftwidth=4
+vim.opt.smartindent=true
+vim.opt.tabstop=4
+vim.opt.cursorline=true
+vim.opt.expandtab=true
 
 vim.keymap.set('n', '<left>', ':bp<CR>', { silent = true })
 vim.keymap.set('n', '<right>', ':bn<CR>', { silent = true })

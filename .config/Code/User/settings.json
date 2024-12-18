@@ -1,6 +1,6 @@
 {
     "editor.rulers": [
-        99,
+        99
     ],
     "files.trimTrailingWhitespace": true,
     "python.unitTest.pyTestEnabled": true,
@@ -34,4 +34,5 @@
     },
     "github.copilot.chat.edits.enabled": true,
     "window.customTitleBarVisibility": "auto",
+    "workbench.colorTheme": "Alt Catppuccin Mocha"
 }

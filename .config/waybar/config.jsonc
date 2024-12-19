@@ -39,8 +39,8 @@
   },
   "hyprland/language": {
     "format": "{}",
-    "format-en": "🇺🇸 US",
-    "format-he": "🇮🇱 HE",
+    "format-en": "🇺🇸",
+    "format-he": "🇮🇱",
   },
   "mpd": {
     "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",

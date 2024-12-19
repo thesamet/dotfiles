@@ -157,6 +157,8 @@ window#waybar.fullscreen .modules-left {
 
 #language {
   background-color: #ddddff;
+  min-width: 40px;
+  padding: 0;
 }
 
 #language:hover {

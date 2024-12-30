@@ -1,11 +1,13 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: 'Fira Code';
-  font-size: 13px;
+  font-family: "Fira Code";
+  font-size: 10px;
+  padding: 0px;
+  margin: -2px;
 }
 
 window#waybar {
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.9);
   color: #ffffff;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -49,10 +51,8 @@ window#waybar.fullscreen .modules-left {
  */
 
 #workspaces {
-  margin-bottom: 5px;
-  margin-top: 5px;
   padding: 5px;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 #workspaces button {
@@ -117,7 +117,7 @@ window#waybar.fullscreen .modules-left {
   transition: all 0.2s;
   margin-bottom: 5px;
   margin-top: 5px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 #clock {

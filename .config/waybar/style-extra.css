@@ -1,7 +1,6 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
   font-family: "Fira Code";
-  font-size: 10px;
   padding: 0px;
   margin: -2px;
 }
@@ -13,9 +12,6 @@ window#waybar {
   transition-duration: 0.5s;
   padding-right: 5px;
   padding-left: 5px;
-}
-
-window#waybar.hidden {
 }
 
 /*

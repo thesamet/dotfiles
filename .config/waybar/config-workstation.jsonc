@@ -1,0 +1,12 @@
+{
+  "modules-right": [
+    "custom/notifications",
+    "pulseaudio",
+    "cpu",
+    "memory",
+    "hyprland/language",
+    "tray",
+    "clock",
+    "custom/power"
+  ]
+}

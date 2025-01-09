@@ -96,6 +96,7 @@ window#waybar.fullscreen .modules-left {
   background-color: transparent;
 }
 
+#battery,
 #clock,
 #pulseaudio,
 #cpu,
@@ -159,6 +160,14 @@ window#waybar.fullscreen .modules-left {
 
 #language:hover {
   background-color: #eeeeff;
+}
+
+#battery {
+  background-color: #5789d8;
+}
+
+#battery:hover {
+  background-color: #598851;
 }
 
 #tray {

@@ -127,7 +127,7 @@ window#waybar.fullscreen .modules-left {
 }
 
 #pulseaudio {
-  background-color: #d8a657;
+  background-color: #f6ae2d;
 }
 
 #pulseaudio:hover {
@@ -136,7 +136,7 @@ window#waybar.fullscreen .modules-left {
 }
 
 #cpu {
-  background-color: #a9b655;
+  background-color: #d9bdc5;
 }
 
 #cpu:hover {
@@ -163,7 +163,7 @@ window#waybar.fullscreen .modules-left {
 }
 
 #battery {
-  background-color: #5789d8;
+  background-color: #42d9c8;
 }
 
 #battery:hover {
